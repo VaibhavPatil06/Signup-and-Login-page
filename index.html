@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            margin: 20px;
+            border: 2px solid rgba(50, 50, 255, 0.505);
+            box-shadow: 2px 2px;
+            box-shadow: inset;
+            display: flex;
+            border-radius: 2%;
+            overflow: hidden;
+            padding: 0px;
+            height: 100%;
+        }
+
+        .right-section {
+            display: block;
+            margin-left: -450px;
+       
+        }
+
+        h1 {
+            margin-left: 40%;
+            margin-top: 30%;
+        }
+
+        .image {
+            padding: 10px;
+            height: 700px;
+            border-radius: 30px;
+            width: 60%;
+
+        }
+
+        .left-section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .paragraph {
+            position: absolute;
+            margin-top: -450px;
+            margin-left: 150px;
+            font-size: 25px;
+        }
+
+        h2:nth-child(1) {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        h2:nth-child(2) {
+            font-family: 'Times New Roman', Times, serif;
+            color: blue;
+        }
+
+        .smallpara {
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #full-name {
+            width: 100%;
+            border-radius: 10px;
+            border-color: rgba(72, 255, 0, 0.193);
+            
+            height: 35px;
+            border: 3px solid rgba(38, 255, 0, 0.275);
+            padding-left: 40px;
+            margin-top: 3px;
+            background: url("./User-Profile-PNG-Picture.png") no-repeat left 10px center;
+            background-size: 20px;      
+        }
+      
+        #full-name:hover {
+            border-color: rgb(4, 197, 4);
+            box-shadow: inset;
+            box-shadow: 2px 2px;
+        }
+        #email{
+            width: 100%;
+            border-radius: 10px;
+            border-color: rgba(72, 255, 0, 0.193);
+           
+            height: 35px;
+            border: 3px solid rgba(38, 255, 0, 0.275);
+            padding-left: 40px;
+            margin-top: 3px;
+            background: url("./free-email-2029111-1713291.png") no-repeat left 10px center;
+            background-size: 20px; 
+        }
+        #email:hover{
+            border-color: rgb(4, 197, 4);
+            box-shadow: inset;
+            box-shadow: 2px 2px;
+        }
+        #password{
+            width: 100%;
+            border-radius: 10px;
+            border-color: rgba(72, 255, 0, 0.193);
+            box-shadow: inset;
+           
+            height: 35px;
+            border: 3px solid rgba(38, 255, 0, 0.275);
+            padding-left: 40px;
+            margin-top: 3px;
+            
+        }
+        #password:hover{
+            border-color: rgb(4, 197, 4);
+            box-shadow: inset;
+            box-shadow: 2px 2px;
+        }
+        .submit {
+            text-align: center;
+            background: rgb(10, 10, 104);
+            color: white;
+            width: 115%;
+            border:0px solid blue;
+            height: 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-top:30px;
+        }
+
+        .submit:hover {
+            background-color: rgb(0, 119, 255);
+
+        }
+        .logos{
+            width:40px;
+            margin-left: 30px;
+            border : 2px solid rgb(26, 218, 26);
+            border-radius: 100%;
+            padding: 2px;
+            
+        }
+        .logos:hover {
+            border : 2px solid rgb(0, 166, 255);
+            width:45px;
+        }
+        @media screen and (max-width: 1100px){
+            .container {
+                display: block;
+            }
+            .right-section {
+                display: block;
+                margin-left: 20px;
+                margin-top: -100px;
+            }
+    
+            h1 {
+                margin-left: 30%;
+                margin-top: 30%;
+                
+            }
+            .image {
+                padding: 10px;
+                height: 300px;
+                border-radius: 30px;
+                width: 95%;
+    
+            }
+    
+    
+            .paragraph {
+                position: absolute;
+                margin-top: -200px;
+                margin-left: 50px;
+                font-size: 15px;
+            }
+    
+           
+    
+            #full-name {
+                width: 80%;
+            }
+          #email{
+                width: 80%;
+            }
+            #password{
+                width: 80%;
+                
+            }
+            .submit {
+                width: 80%;
+                margin-left:30px;
+            }
+    
+          
+            .logos{
+                margin-left: 9%;
+                
+            }
+        }
+    </style>
+    <title>Sign Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div>
+                <img src="./66294-sunrise-on-the-mountain.jpg" alt="" class="image">
+            </div>
+            <div class="paragraph">
+                <h2>Unique solutions for Unique Business</h2>
+                <p class="smallpara"><i>With a team of over 100 world-class industry experts</i></p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h1>Sign In</h1>
+            <p style="color :gray; margin-left:80px;">Already have an account? <a href="./login.html"
+                    style="text-decoration: none; ">Log In</a> </p>
+            <div>
+                <div style="font-size: 20px; margin-top:10px;">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name">
+                </div>
+                <div style="font-size: 20px; margin-top:20px;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div style="font-size: 20px; margin-top:20px;"> <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div style="margin-top: 15px; color:gray;">
+                    <label for="email-updates">Sign up for Email updates?</label>
+                </div> <button type="submit" class="submit">Sign Up</button>
+            </div>
+            <p style="color:gray; text-align:center; margin-left:10px; margin-top:10%;" >Or Log in using social platforms:</p>
+            <div>
+             <a href="" style="text-decoration: none;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt=""  class="logos">   </a>
+             <a href=""style="text-decoration: none;"><img src="https://static.vecteezy.com/system/resources/previews/016/716/465/original/gmail-icon-free-png.png" alt=""  class="logos">   </a>
+             <a href=""style="text-decoration: none;"><img src="https://toppng.com/uploads/preview/instagram-logo-transparent-logo-instagram-vector-2021-116177766354twhxoagvv.png" alt=""  class="logos">   </a>
+             <a href=""style="text-decoration: none;"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt=""  class="logos">   </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
